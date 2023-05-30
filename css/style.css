@@ -1,0 +1,52 @@
+p{
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    background: #E9E6F8;
+    padding: 20px;
+}
+
+main{
+    background: aliceblue;
+}
+
+.div-izquierdo{
+    height: 100vh;
+    width: 60%;
+    position: relative;
+    display: inline-block;
+}
+
+.div-derecho{    
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    display: inline-block;
+
+}
+
+footer{
+    background: #E9E6F8 ;
+    padding: 50px;
+    text-align: center;
+    font-size: 1em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.contenedor-mensaje{
+    margin: 30px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
