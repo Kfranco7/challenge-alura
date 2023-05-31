@@ -32,7 +32,7 @@ footer{
     text-align: center;
     font-size: 1em;
     bottom: 0;
-    position: fixed;
+    position: static;
     width: 100%;
     background: linear-gradient(aliceblue, #E9E6F8);
 }
@@ -113,7 +113,7 @@ footer{
 
 .area{
     width: 100%;
-    height: 30%;
+    height: 40%;
     border: 0;
     border-radius: 25px;
     background: transparent;
@@ -164,4 +164,17 @@ footer{
     .contenedor-acciones{
         margin: 0 30px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .botones{
+        position: relative;
+    }
+
+    .encrip, .desencrip{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+
 }
