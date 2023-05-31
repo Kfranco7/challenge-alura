@@ -10,6 +10,7 @@
     <title>Alura Challenge</title>
 </head>
 <body>
+    <canvas id="canvas" width=500 , height=500></canvas>
     <header>
         <nav>
             <h1><img src="img/Logo.png" > </h1>
@@ -17,22 +18,33 @@
     </header>
     <main>
         <div class="div-izquierdo">
-            <textarea> </textarea>
-            <p>Solo minisculas y sin acentos</p>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+            <div class="contenedor-acciones">
+                <textarea class="area" placeholder="Ingrese el texto aqui" id="texto-encrip"></textarea>
+                <div class="botones">
+                    <p class="restricciones">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07zM9 5v6h2V5H9zm0 8v2h2v-2H9z"/></svg>&nbsp;Solo minisculas y sin acentos</p>
+                    <input type="submit" value="Encriptar" class="encrip" id="encriptar">
+                    <input type="submit" value="Desencriptar" class="desencrip" id="desencriptar">
+                    <input type="submit" value="Limpiar" class="encrip" id="limpiar">
+                </div>
+                
+            </div>
+            
         </div>
 
         <div class="div-derecho">
             <div class="contenedor-mensaje">
-                <img src="img/Muñeco.png" alt="">
-                <p class="centrar-texto">Ningun mensaje fue encontrado</p>
-                <p class="centrar-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                <img src="img/Muñeco.png" class="muneco" alt="" id="muneco" >
+                <p class="centrar-texto" id="texto1">Ningun mensaje fue encontrado </p> 
+                <p class="texto-scrip" id="texto2">ingresa el texto que desees encriptar o desencriptar</p>
+                <p id="resultado"></p>
+                <input type="submit" value="Copiar" class="desencrip" id="copiar">
+
             </div>
         </div>
     </main>
     <footer>
-        <p class="copyright">&copy Copyright Karolyn Franco </p>
+        <p class="copyright">2023 &copy Diseñado por Karolyn Franco </p>
     </footer>
 </body>
 <script src="js/main.js"></script>

@@ -4,6 +4,7 @@ p{
 nav{
     background: #E9E6F8;
     padding: 20px;
+    background: linear-gradient(#E9E6F8,  aliceblue);
 }
 
 main{
@@ -27,16 +28,68 @@ main{
 
 footer{
     background: #E9E6F8 ;
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
     font-size: 1em;
     bottom: 0;
     position: fixed;
     width: 100%;
+    background: linear-gradient(aliceblue, #E9E6F8);
 }
 
 .centrar-texto{
     text-align: center;
+    font-weight: bold;
+}
+
+.texto-scrip{
+    text-align: center;
+    margin: 20px;
+}
+
+::placeholder{
+    color: #0A3871;
+    font-size: 30px;
+}
+
+
+
+.restricciones{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    color: #495057;
+}
+
+.encrip{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: darkblue;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.desencrip{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+    background: #D8DFE8 ;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#copiar{
+    display: none;
 }
 
 .contenedor-mensaje{
@@ -49,4 +102,66 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-acciones{
+    margin: 30px;
+    height: 70%;
+    position: relative;
+}
+
+.area{
+    width: 100%;
+    height: 30%;
+    border: 0;
+    border-radius: 25px;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.botones{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#resultado{
+    margin: 20px;
+}
+
+#canvas{
+    display: none;
+}
+
+@media screen and (max-width: 970px) {
+    .div-izquierdo{
+        height: 400px;
+        width: 100%;
+        display: inherit;
+        position: relative;
+    }
+
+    .div-derecho{
+        height: 100%;
+        width: 100%;        
+        position: relative;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    body{
+        background: aliceblue;
+    }
+
+    .contenedor-mensaje{
+        padding: 40px;
+    }
+
+    .contenedor-acciones{
+        margin: 0 30px;
+    }
 }
